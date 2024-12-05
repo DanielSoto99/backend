@@ -5,7 +5,7 @@ const sequelize = require('./config/conexiondb');
 const postulantesRouter = require('./controllers/postulantesController');
 const vacantesRouter = require('./controllers/vacantesController');
 const postulacionesRouter = require('./controllers/postulacionesController');
-const administradoresRouter = require('./controllers/administradoresRhController');
+
 const usuariosRouter = require ('./controllers/userController');
 const bodyParser = require('body-parser');
 const propuestaRoutes = require('./routes/propuestaRoutes');
@@ -50,8 +50,8 @@ app.use('/api/vacantes', vacantesRouter);
 //Rutas para Postulaciones
 app.use('/api/postulaciones', postulacionesRouter);
 
-//Rutas para AdministradoresRh
-app.use('/api/administradoresRh', administradoresRouter);
+
+
 
 // conexion bd-----------------------------------
 (async () => {
